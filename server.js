@@ -10,6 +10,7 @@ app.use(express.json());
 app.use(routes);
 
 db.once('open', () => {
+  // const { User, Thought } = require('./models');
   app.listen(PORT, () => {
     console.log(`API server running on port ${PORT}!`);
   });
